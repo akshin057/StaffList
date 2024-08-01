@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/personImageCIV"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:src="@drawable/person"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20sp"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/surnameTV"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Фамилия"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20sp"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/ageTV"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Возраст"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20sp"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/postTV"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Должность"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20sp"
+            android:textSize="30sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="30sp"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/editBTN"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/edit_btn"
+                />
+
+            <Button
+                android:id="@+id/deleteBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Удалить"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="@color/black"
+
+                />
+
+            <Button
+                android:id="@+id/closeBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Закрыть"
+                android:backgroundTint="@color/black"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
